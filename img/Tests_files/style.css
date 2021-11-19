@@ -12,7 +12,6 @@
 /* Body */
 body{
     margin: 0;
-    position: relative;
 }
 
 body a{
@@ -26,11 +25,6 @@ Contenedor principal (el que le da tamaño a todos)
 .content-box{
     position: relative;
     height: 40rem;
-    width: 100%;
-} 
-.content-box-2{
-    position: relative;
-    height: 30rem;
     width: 100%;
 } 
 /**
@@ -153,19 +147,6 @@ Separa los elementos con in display flex y los mantiene centrados
     height: 100%;
 }
 
-.separador-row.backgroud-grey{
-    background-color: #fcfcfc;
-}
-
-.separador-column{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    height: 100%;
-}
-
 /**
 Forma de item 1 dentro de los separadores con sus propias modificaciones.
 */
@@ -216,6 +197,9 @@ Forma de item 2 dentro de os separadores con sus propias modificaciones.
     border-color: #e8e8e8;
     margin-bottom: 10px;
 }
+.separador-row.backgroud-grey{
+    background-color: #fcfcfc;
+}
 
 .item-box-2 p{
     text-align: center;
@@ -226,43 +210,13 @@ Forma de item 2 dentro de os separadores con sus propias modificaciones.
     color: #8d8d8d;
 }
 
-/**
-Forma de item 3 dentro de os separadores con sus propias modificaciones.
-*/
-.item-box-3{
-    border-style: solid;
-    border-width: 3px;
+.separador-column{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    width: 13rem;
-    height: 8rem;
-    font-size: 1rem;
-    line-height: 2rem;
-    margin: 0rem 2rem;
-    border-color: #e8e8e8;
-}
-
-.item-box-3 p{
-    text-align: center;
-    margin-top: 0px;
-    /* padding: 0px 15px; */
-    height: 10em;
-    overflow: scroll;
-    color: #8d8d8d;
-}
-.item-box-3 h5{
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 0px;
-    /* padding: 0px 15px; */
-    height: 10em;
-    font-size: 1.3rem;
-    overflow: scroll;
-    color: #8d8d8d;
-    text-transform: uppercase;
-    font-style: italic;
+    justify-content: center;
+    align-content: center;
+    height: 100%;
 }
 
 /**
@@ -280,7 +234,6 @@ footer{
 .footer-tittle{
     padding: 3rem 3rem 1rem 3rem;
     font-size: 3rem;
-    margin: 3rem;
 }
 footer div{
     width: 50%;
@@ -297,7 +250,6 @@ footer p{
     flex-direction: row;
     align-content: center;
     justify-content: space-between;
-    margin: 1rem;
 }
 
 .footer-row a{
@@ -317,95 +269,3 @@ footer p{
     color: #fff;
 
 }
-
-/**
-Form
-*/
-
-#form{
-    right: 0%;
-    position: fixed;
-    display: flex;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    z-index: 1;
-    background-color: #1e1e1e;
-    width: 20rem;
-    height: 45rem;
-}
-
-.tittle-form{
-    width: 100%;
-}
-
-.tittle-form p{
-    text-align: center;
-    font-weight: bold;
-    padding: 2rem;
-    color: #fff;
-    font-size: 3rem;
-    margin-bottom: 0%;
-}
-
-.tittle-form a{
-    position: absolute;
-    font-weight: bold;
-    font-size: 1.3rem;
-    color:red;
-    left:5%;
-    top: 2%;
-}
-
-.inputs-form {
-    display: flex;
-    flex-direction: column;
-    color: #fff;
-    text-transform: uppercase;
-    flex-wrap: wrap;
-    width: 70%;
-}
-
-.inputs-form p{
-    margin-top: 10px;
-}
-
-.inputs-form input{
-    width: 100%;
-}
-
-.inputs-form select{
-    width: 45%;
-    height: 2rem;
-}
-
-.select-form{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.text-form{
-    width: 70%;
-    text-align: center;
-}
-
-.text-form p{
-    margin-top: 20px;
-    color: #858c91;
-    font-size: 0.9rem;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.text-form a{
-    width: 100px;
-    margin: 0 auto;
-    display: block;
-    padding: 0.5rem;
-    color: red;
-    border: 1px solid red;
-}
-
